@@ -9,18 +9,20 @@ vec_control::PurePursuit::PurePursuit() {
   nh_private.param<double>("car_wheel_base", car_wheel_base_, 0.44);
   nh_private.param<int>("controller_freq", controller_freq_, 10);
   nh_private.param<std::string>("map_frame", map_frame_, "map");
-  nh_private.param<std::string>("base_frame", base_frame_, "car/base_link");
+  nh_private.param<std::string>("base_frame", base_frame_, "base_link");
   ld_ = min_ld_;
   ros_rate_ = new ros::Rate(controller_freq_);
+  // Publishers and subscribers
   control_pub_ = nh_.advertise<ackermann_msgs::AckermannDriveStamped>(
-      "/car/mux/ackermann_cmd_mux/input/teleop", 1);
+      "/pure_pursuit/control", 1);
   ros::Subscriber odom_sub_ =
-      nh_.subscribe("/car/vesc/odom", 1, &PurePursuit::odom_clk_, this);
+      nh_.subscribe("/odom", 1, &PurePursuit::odom_clk_, this);
   ros::Subscriber path_sub_ =
-      nh_.subscribe("/path", 1, &PurePursuit::path_clk_, this);
+      nh_.subscribe("/pure_pursuit/path", 1, &PurePursuit::path_clk_, this);
   tfListener_ = new tf2_ros::TransformListener(tfBuffer_);
   l_point_pub_ = nh_.advertise<geometry_msgs::PointStamped>(
       "/pure_pursuit/lookahead_point", 1);
+  // main loop
   control_loop_();
 }
 void vec_control::PurePursuit::odom_clk_(
@@ -66,14 +68,14 @@ void vec_control::PurePursuit::control_loop_() {
           if (distance_ >= ld_) {
             path_[point_idx_].header.stamp =
                 ros::Time::now(); // Set the timestamp to now for the transform
-                                  // to work, because it tries to trannsform the
+                                  // to work, because it tries to transform the
                                   // point at the time stamp of the input point
             tfBuffer_.transform(path_[point_idx_], target_point_, base_frame_,
                                 ros::Duration(0.1));
             break;
           }
         }
-
+        // Calculate the steering angle
         ld_2 = ld_ * ld_;
         y_t = target_point_.pose.position.y;
         delta = atan2(2 * car_wheel_base_ * y_t, ld_2);
@@ -108,7 +110,10 @@ void vec_control::PurePursuit::control_loop_() {
   }
 }
 
-vec_control::PurePursuit::~PurePursuit() {}
+vec_control::PurePursuit::~PurePursuit() {
+  delete tfListener_;
+  delete ros_rate_;
+}
 int main(int argc, char **argv) {
   ros::init(argc, argv, "pure_pursuit");
   vec_control::PurePursuit pp_node;
