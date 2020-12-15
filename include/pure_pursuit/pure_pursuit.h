@@ -26,10 +26,10 @@ private:
   int controller_freq_;
   int point_idx_;
   int last_p_idx_;
+  int n_laps_;
   double last_dist_ = std::numeric_limits<double>::infinity();
   bool got_path_ = false;
   bool path_done_ = true;
-  bool loop_ = false;
   std::string map_frame_ = "map";
   std::string base_frame_ = "base_link";
   ros::Time last_msg_time_;

@@ -8,6 +8,7 @@ vec_control::PurePursuit::PurePursuit() {
   nh_private.param<double>("min_ld", min_ld_, 0.5);
   nh_private.param<double>("car_wheel_base", car_wheel_base_, 0.44);
   nh_private.param<int>("controller_freq", controller_freq_, 10);
+  nh_private.param<int>("n_laps", n_laps_, 0);
   nh_private.param<std::string>("map_frame", map_frame_, "map");
   nh_private.param<std::string>("base_frame", base_frame_, "base_link");
   ld_ = min_ld_;
@@ -41,9 +42,9 @@ void vec_control::PurePursuit::path_clk_(const nav_msgs::Path::ConstPtr &msg) {
       distance(path_[0].pose.position, path_.back().pose.position);
   ROS_INFO("Start to End Distance: %f", start_end_dist);
   ROS_INFO("Min lookup distance: %f", min_ld_);
-  if (start_end_dist <= min_ld_) {
-    loop_ = true;
-    ROS_INFO("Is Loop: True");
+  if (start_end_dist > min_ld_ && n_laps_ > 0) {
+    ROS_WARN("Ignoring N laps, start and end points are too far !");
+    n_laps_ = 0;
   }
 }
 
@@ -86,20 +87,23 @@ void vec_control::PurePursuit::control_loop_() {
 
         last_p_idx_ = point_idx_;
         last_dist_ = distance_;
-        if (point_idx_ == path_.size() && loop_) {
-          point_idx_ = 0;
-        } else if (point_idx_ == path_.size()) {
-          ROS_INFO("Reached final point");
-          control_msg_.drive.steering_angle = 0;
-          control_msg_.drive.speed = 0;
-          control_msg_.header.stamp = ros::Time::now();
-          control_pub_.publish(control_msg_);
-          got_path_ = false;
-          point_idx_ = 0;
+        if (point_idx_ == path_.size()) {
+          n_laps_--;
+          if (n_laps_ > 0) {
+            point_idx_ = 0;
+          } else {
+            ROS_INFO("Reached final point");
+            control_msg_.drive.steering_angle = 0;
+            control_msg_.drive.speed = 0;
+            control_msg_.header.stamp = ros::Time::now();
+            control_pub_.publish(control_msg_);
+            got_path_ = false;
+            point_idx_ = 0;
+          }
+          lookahead_p.point = path_[point_idx_].pose.position;
+          lookahead_p.header = path_[point_idx_].header;
+          l_point_pub_.publish(lookahead_p); // Publish the lookahead point
         }
-        lookahead_p.point = path_[point_idx_].pose.position;
-        lookahead_p.header = path_[point_idx_].header;
-        l_point_pub_.publish(lookahead_p); // Publish the lookahead point
       } catch (tf2::TransformException &ex) {
         ROS_WARN("%s", ex.what());
       }
