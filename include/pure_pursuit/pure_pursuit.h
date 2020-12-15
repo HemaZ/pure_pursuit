@@ -62,6 +62,10 @@ template <typename T1, typename T2> double distance(T1 pt1, T2 pt2) {
               pow(pt1.z - pt2.z, 2));
 }
 
+template <typename T1, typename T2> double distance2d(T1 pt1, T2 pt2) {
+  return sqrt(pow(pt1.x - pt2.x, 2) + pow(pt1.y - pt2.y, 2));
+}
+
 } // namespace vec_control
 
 #endif

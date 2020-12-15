@@ -43,7 +43,7 @@ void vec_control::PurePursuit::path_clk_(const nav_msgs::Path::ConstPtr &msg) {
   ROS_INFO("Start to End Distance: %f", start_end_dist);
   ROS_INFO("Min lookup distance: %f", min_ld_);
   if (start_end_dist > min_ld_ && n_laps_ > 0) {
-    ROS_WARN("Ignoring N laps, start and end points are too far !");
+    ROS_WARN("Ignoring N laps. start and end points are too far !");
     n_laps_ = 0;
   }
 }
@@ -51,6 +51,7 @@ void vec_control::PurePursuit::path_clk_(const nav_msgs::Path::ConstPtr &msg) {
 void vec_control::PurePursuit::control_loop_() {
   double y_t = 0, ld_2 = 0, delta = 0;
   double distance_ = 0;
+  double target_speed = 0;
   while (ros::ok()) {
     if (got_path_) {
       // get the current robot location by tf base_link -> map
@@ -63,16 +64,19 @@ void vec_control::PurePursuit::control_loop_() {
             map_frame_, base_frame_, ros::Time(0), ros::Duration(0.1));
 
         for (; point_idx_ < path_.size(); point_idx_++) {
-          distance_ = distance(path_[point_idx_].pose.position,
-                               base_location_.transform.translation);
+          distance_ = distance2d(path_[point_idx_].pose.position,
+                                 base_location_.transform.translation);
           ROS_INFO("Point ID: %d, Distance %f", point_idx_, distance_);
           if (distance_ >= ld_) {
             path_[point_idx_].header.stamp =
                 ros::Time::now(); // Set the timestamp to now for the transform
                                   // to work, because it tries to transform the
                                   // point at the time stamp of the input point
+            target_speed = path_[point_idx_].pose.position.z;
+            path_[point_idx_].pose.position.z = 0;
             tfBuffer_.transform(path_[point_idx_], target_point_, base_frame_,
                                 ros::Duration(0.1));
+            path_[point_idx_].pose.position.z = target_speed;
             break;
           }
         }
@@ -81,7 +85,7 @@ void vec_control::PurePursuit::control_loop_() {
         y_t = target_point_.pose.position.y;
         delta = atan2(2 * car_wheel_base_ * y_t, ld_2);
         control_msg_.drive.steering_angle = delta;
-        control_msg_.drive.speed = 2;
+        control_msg_.drive.speed = target_speed;
         control_msg_.header.stamp = ros::Time::now();
         control_pub_.publish(control_msg_);
 
