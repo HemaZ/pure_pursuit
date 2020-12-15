@@ -121,10 +121,10 @@ void vec_control::PurePursuit::control_loop_() {
             got_path_ = false;
             point_idx_ = 0;
           }
-          lookahead_p.point = path_[point_idx_].pose.position;
-          lookahead_p.header = path_[point_idx_].header;
-          l_point_pub_.publish(lookahead_p); // Publish the lookahead point
         }
+        lookahead_p.point = path_[point_idx_].pose.position;
+        lookahead_p.header = path_[point_idx_].header;
+        l_point_pub_.publish(lookahead_p); // Publish the lookahead point
       } catch (tf2::TransformException &ex) {
         ROS_WARN("%s", ex.what());
       }
