@@ -20,6 +20,8 @@ vec_control::PurePursuit::PurePursuit() {
       nh_.subscribe("/odom", 1, &PurePursuit::odom_clk_, this);
   ros::Subscriber path_sub_ =
       nh_.subscribe("/pure_pursuit/path", 1, &PurePursuit::path_clk_, this);
+  ros::Subscriber obstacles_flag_ =
+      nh_.subscribe("/speed_flags", 1, &PurePursuit::obstacles_flag_clk_, this);
   tfListener_ = new tf2_ros::TransformListener(tfBuffer_);
   l_point_pub_ = nh_.advertise<geometry_msgs::PointStamped>(
       "/pure_pursuit/lookahead_point", 1);
@@ -46,6 +48,12 @@ void vec_control::PurePursuit::path_clk_(const nav_msgs::Path::ConstPtr &msg) {
     ROS_WARN("Ignoring N laps. start and end points are too far !");
     n_laps_ = 0;
   }
+}
+
+void vec_control::PurePursuit::obstacles_flag_clk_(
+    const aerovect_msgs::SpeedFlags::ConstPtr &msg) {
+  stop_flag_ = msg->flag;
+  ROS_INFO("Got Stop Flag %d", stop_flag_);
 }
 
 void vec_control::PurePursuit::control_loop_() {
@@ -79,6 +87,15 @@ void vec_control::PurePursuit::control_loop_() {
             path_[point_idx_].pose.position.z = target_speed;
             break;
           }
+        }
+        // check stop flag
+        if (stop_flag_ == 2) {
+          target_speed = 0;
+          ROS_INFO("Stopping due to speed flag 2");
+        } else if (stop_flag_ == 1) {
+          target_speed /= 2;
+          ROS_INFO("slowing due to speed flag 1");
+          ROS_INFO("Current Speed %f", target_speed);
         }
         // Calculate the steering angle
         ld_2 = ld_ * ld_;

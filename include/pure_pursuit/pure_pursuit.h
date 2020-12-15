@@ -1,6 +1,7 @@
 #ifndef PURE_PURSUIT_HPP
 #define PURE_PURSUIT_HPP
 #include "ackermann_msgs/AckermannDriveStamped.h"
+#include "aerovect_msgs/SpeedFlags.h"
 #include "ros/ros.h"
 #include "std_msgs/Float64.h"
 #include "tf2_geometry_msgs/tf2_geometry_msgs.h"
@@ -30,6 +31,7 @@ private:
   double last_dist_ = std::numeric_limits<double>::infinity();
   bool got_path_ = false;
   bool path_done_ = true;
+  int stop_flag_ = 0;
   std::string map_frame_ = "map";
   std::string base_frame_ = "base_link";
   ros::Time last_msg_time_;
@@ -50,6 +52,7 @@ private:
 
   void odom_clk_(const nav_msgs::Odometry::ConstPtr &msg);
   void path_clk_(const nav_msgs::Path::ConstPtr &msg);
+  void obstacles_flag_clk_(const aerovect_msgs::SpeedFlags::ConstPtr &msg);
   void control_loop_();
 
 public:
