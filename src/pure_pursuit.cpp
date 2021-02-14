@@ -21,7 +21,7 @@ vec_control::PurePursuit::PurePursuit() {
   ros::Subscriber path_sub_ =
       nh_.subscribe("/pure_pursuit/path", 1, &PurePursuit::path_clk_, this);
   ros::Subscriber obstacles_flag_ =
-      nh_.subscribe("/speed_flags", 1, &PurePursuit::obstacles_flag_clk_, this);
+      nh_.subscribe("/speed_flag", 1, &PurePursuit::obstacles_flag_clk_, this);
   tfListener_ = new tf2_ros::TransformListener(tfBuffer_);
   l_point_pub_ = nh_.advertise<geometry_msgs::PointStamped>(
       "/pure_pursuit/lookahead_point", 1);
@@ -53,6 +53,7 @@ void vec_control::PurePursuit::path_clk_(const nav_msgs::Path::ConstPtr &msg) {
 void vec_control::PurePursuit::obstacles_flag_clk_(
     const aerovect_msgs::SpeedFlags::ConstPtr &msg) {
   stop_flag_ = msg->flag;
+
   ROS_INFO("Got Stop Flag %d", stop_flag_);
 }
 
