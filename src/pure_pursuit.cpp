@@ -9,8 +9,9 @@ vec_control::PurePursuit::PurePursuit() {
   nh_private.param<double>("car_wheel_base", car_wheel_base_, 0.44);
   nh_private.param<int>("controller_freq", controller_freq_, 10);
   nh_private.param<int>("n_laps", n_laps_, 0);
-  nh_private.param<std::string>("map_frame", map_frame_, "map");
+  nh_private.param<std::string>("map_frame", map_frame_, "earth");
   nh_private.param<std::string>("base_frame", base_frame_, "base_link");
+  nh_.param<std::string>("/wps_player/last_pose_csv", last_pose_csv, "/ros_ws/latest_pose.csv");  
   ld_ = min_ld_;
   ros_rate_ = new ros::Rate(controller_freq_);
   // Publishers and subscribers
@@ -32,6 +33,8 @@ void vec_control::PurePursuit::odom_clk_(
     const nav_msgs::Odometry::ConstPtr &msg) {
   car_speed_ = msg->twist.twist.linear.x;
   ld_ = std::max(ld_gain_ * car_speed_, min_ld_);
+  last_x_pose = msg -> pose.pose.position.x;
+  last_y_pose = msg -> pose.pose.position.y;
 }
 void vec_control::PurePursuit::path_clk_(const nav_msgs::Path::ConstPtr &msg) {
   ROS_INFO("New path is received.");
@@ -114,19 +117,23 @@ void vec_control::PurePursuit::control_loop_() {
           if (n_laps_ > 0) {
             point_idx_ = 0;
           } else {
-            ROS_INFO("Reached final point");
+            ROS_INFO("Reached final point");            
             control_msg_.drive.steering_angle = 0;
             control_msg_.drive.speed = 0;
             control_msg_.header.stamp = ros::Time::now();
             control_pub_.publish(control_msg_);
             got_path_ = false;
             point_idx_ = 0;
+            std::ofstream last_pose_stream(last_pose_csv);
+            last_pose_stream << last_x_pose <<","<< last_y_pose;
+            last_pose_stream.close();
           }
         }
         lookahead_p.point = path_[point_idx_].pose.position;
         lookahead_p.header = path_[point_idx_].header;
         l_point_pub_.publish(lookahead_p); // Publish the lookahead point
-      } catch (tf2::TransformException &ex) {
+      } 
+      catch (tf2::TransformException &ex) {
         ROS_WARN("%s", ex.what());
       }
     }
