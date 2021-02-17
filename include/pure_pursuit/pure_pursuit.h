@@ -36,7 +36,7 @@ private:
   float last_x_pose = 0.0;
   float last_y_pose = 0.0;
   std::string last_pose_csv;
-  
+  std::ofstream last_pose_stream;
   std::string map_frame_ = "earth";
   std::string base_frame_ = "base_link";
   ros::Time last_msg_time_;

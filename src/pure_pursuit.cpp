@@ -1,6 +1,8 @@
 #include "pure_pursuit/pure_pursuit.h"
 
-vec_control::PurePursuit::PurePursuit() {
+vec_control::PurePursuit::PurePursuit() 
+  : last_pose_stream(last_pose_csv)
+{
   ros::NodeHandle nh_;
   ros::NodeHandle nh_private("~");
   // Node paramters
@@ -11,7 +13,7 @@ vec_control::PurePursuit::PurePursuit() {
   nh_private.param<int>("n_laps", n_laps_, 0);
   nh_private.param<std::string>("map_frame", map_frame_, "earth");
   nh_private.param<std::string>("base_frame", base_frame_, "base_link");
-  nh_.param<std::string>("/wps_player/last_pose_csv", last_pose_csv, "/ros_ws/latest_pose.csv");  
+  nh_.param<std::string>("/wps_player/last_pose_csv", last_pose_csv, "/ros_ws/latest_pose.csv");    
   ld_ = min_ld_;
   ros_rate_ = new ros::Rate(controller_freq_);
   // Publishers and subscribers
@@ -34,7 +36,8 @@ void vec_control::PurePursuit::odom_clk_(
   car_speed_ = msg->twist.twist.linear.x;
   ld_ = std::max(ld_gain_ * car_speed_, min_ld_);
   last_x_pose = msg -> pose.pose.position.x;
-  last_y_pose = msg -> pose.pose.position.y;
+  last_y_pose = msg -> pose.pose.position.y;  
+  last_pose_stream << last_x_pose <<","<< last_y_pose<<"\n";
 }
 void vec_control::PurePursuit::path_clk_(const nav_msgs::Path::ConstPtr &msg) {
   ROS_INFO("New path is received.");
@@ -123,10 +126,7 @@ void vec_control::PurePursuit::control_loop_() {
             control_msg_.header.stamp = ros::Time::now();
             control_pub_.publish(control_msg_);
             got_path_ = false;
-            point_idx_ = 0;
-            std::ofstream last_pose_stream(last_pose_csv);
-            last_pose_stream << last_x_pose <<","<< last_y_pose;
-            last_pose_stream.close();
+            point_idx_ = 0;            
           }
         }
         lookahead_p.point = path_[point_idx_].pose.position;
@@ -145,6 +145,7 @@ void vec_control::PurePursuit::control_loop_() {
 
 vec_control::PurePursuit::~PurePursuit() {
   delete tfListener_;
+  last_pose_stream.close();
   delete ros_rate_;
 }
 int main(int argc, char **argv) {
