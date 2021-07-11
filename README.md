@@ -1,5 +1,7 @@
 # pure_pursuit
-ROS impleemntation of pure pursuit controller
+ROS1 impleemntation of pure pursuit controller
+
+For ROS2 check this branch. [foxy-devel](https://github.com/HemaZ/pure_pursuit/tree/foxy-devel)
 
 - [pure_pursuit](#pure_pursuit)
   - [How to run](#how-to-run)
