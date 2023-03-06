@@ -1,0 +1,19 @@
+name: build
+
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: '17 1 * * *'
+
+jobs:
+  build_noetic:
+    runs-on: ubuntu-20.04
+    steps:
+      - uses: jspricke/ros-deb-builder-action@main
+        with:
+          DEB_DISTRO: noetic
+          ROS_DISTRO: noetic
+          REPOS_FILE: https://raw.githubusercontent.com/HemaZ/pure_pursuit/main/pure_pursuit.repos
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          SQUASH_HISTORY: true
+
