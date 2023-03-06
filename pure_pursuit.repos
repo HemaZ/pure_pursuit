@@ -1,0 +1,5 @@
+repositories:
+  pure_pursuit:
+    type: git
+    url: https://github.com/HemaZ/pure_pursuit.git
+    version: ros
