@@ -7,13 +7,11 @@ on:
 
 jobs:
   build_noetic:
-    runs-on: ubuntu-20.04
+    runs-on: ubuntu-22.04
     steps:
-      - uses: HemaZ/ros-deb-builder-action@main
+      - uses: jspricke/ros-deb-builder-action@main
         with:
-          DEB_DISTRO: noetic
+          DEB_DISTRO: focal
           ROS_DISTRO: noetic
-          REPOS_FILE: https://raw.githubusercontent.com/HemaZ/pure_pursuit/main/pure_pursuit.repos
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           SQUASH_HISTORY: true
-
