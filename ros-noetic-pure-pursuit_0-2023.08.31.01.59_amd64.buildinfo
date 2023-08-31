@@ -2,16 +2,16 @@ Format: 1.0
 Source: ros-noetic-pure-pursuit
 Binary: ros-noetic-pure-pursuit
 Architecture: amd64
-Version: 0-2023.08.30.01.58
+Version: 0-2023.08.31.01.59
 Checksums-Md5:
- 4cfdd9a5005fb3815e04b344db9472f5 5128 ros-noetic-pure-pursuit_0-2023.08.30.01.58_amd64.deb
+ de7d458d82e4617f09fdaf6a71493808 5120 ros-noetic-pure-pursuit_0-2023.08.31.01.59_amd64.deb
 Checksums-Sha1:
- 11d047c6f6e4e909255e108ba523de8e3a6df600 5128 ros-noetic-pure-pursuit_0-2023.08.30.01.58_amd64.deb
+ fcade7a75171b9719b5ccffa886b09f3e9bae02b 5120 ros-noetic-pure-pursuit_0-2023.08.31.01.59_amd64.deb
 Checksums-Sha256:
- ba19295015e708e49eb6b4e098eef7bba348a1f1069d3374405828d6d91d111d 5128 ros-noetic-pure-pursuit_0-2023.08.30.01.58_amd64.deb
+ 26a3b148ba3df93df7da0b9335f99de33ed835a1dd153ad06b5a2927da0dd4cb 5120 ros-noetic-pure-pursuit_0-2023.08.31.01.59_amd64.deb
 Build-Origin: Ubuntu
 Build-Architecture: amd64
-Build-Date: Wed, 30 Aug 2023 01:59:52 +0000
+Build-Date: Thu, 31 Aug 2023 02:00:31 +0000
 Build-Path: /build/package/package
 Installed-Build-Depends:
  autoconf (= 2.69-11.1),
@@ -131,7 +131,7 @@ Installed-Build-Depends:
  libdebhelper-perl (= 12.10ubuntu1),
  libdpkg-perl (= 1.19.7ubuntu3.2),
  libeigen3-dev (= 3.3.7-2),
- libelf1 (= 0.176-1.1build1),
+ libelf1 (= 0.176-1.1ubuntu0.1),
  libexpat1 (= 2.2.9-1ubuntu0.6),
  libexpat1-dev (= 2.2.9-1ubuntu0.6),
  libffi7 (= 3.3-4),
@@ -355,4 +355,4 @@ Environment:
  DEB_BUILD_OPTIONS="nocheck parallel=2"
  LANG="C.UTF-8"
  LC_ALL="C.UTF-8"
- SOURCE_DATE_EPOCH="1693360716"
+ SOURCE_DATE_EPOCH="1693447151"
