@@ -2,16 +2,16 @@ Format: 1.0
 Source: ros-noetic-pure-pursuit
 Binary: ros-noetic-pure-pursuit
 Architecture: amd64
-Version: 0-2023.09.07.01.59
+Version: 0-2023.09.08.01.59
 Checksums-Md5:
- 52f6e15a4a38f71412777554d14eafab 5128 ros-noetic-pure-pursuit_0-2023.09.07.01.59_amd64.deb
+ 435cb1bd99b9fb04e0a9e4bb388720a8 5132 ros-noetic-pure-pursuit_0-2023.09.08.01.59_amd64.deb
 Checksums-Sha1:
- 78d70376adf5973cd2c168acb762f11913fd01a8 5128 ros-noetic-pure-pursuit_0-2023.09.07.01.59_amd64.deb
+ cd3aed8fa0cdf8f3924cefffe2d56180fcb9407a 5132 ros-noetic-pure-pursuit_0-2023.09.08.01.59_amd64.deb
 Checksums-Sha256:
- 8730cfa62fd1d7fc157e6bf758b99f9929aaf2387022552afed927604a59455e 5128 ros-noetic-pure-pursuit_0-2023.09.07.01.59_amd64.deb
+ 026db78d659bf74b90e5ad75ac77b78110f26915ef3f97040ed54fdd41947b60 5132 ros-noetic-pure-pursuit_0-2023.09.08.01.59_amd64.deb
 Build-Origin: Ubuntu
 Build-Architecture: amd64
-Build-Date: Thu, 07 Sep 2023 02:00:52 +0000
+Build-Date: Fri, 08 Sep 2023 02:00:09 +0000
 Build-Path: /build/package/package
 Installed-Build-Depends:
  autoconf (= 2.69-11.1),
@@ -355,4 +355,4 @@ Environment:
  DEB_BUILD_OPTIONS="nocheck parallel=2"
  LANG="C.UTF-8"
  LC_ALL="C.UTF-8"
- SOURCE_DATE_EPOCH="1694051952"
+ SOURCE_DATE_EPOCH="1694138345"
