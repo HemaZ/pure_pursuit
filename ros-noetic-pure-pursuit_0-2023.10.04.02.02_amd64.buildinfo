@@ -2,16 +2,16 @@ Format: 1.0
 Source: ros-noetic-pure-pursuit
 Binary: ros-noetic-pure-pursuit
 Architecture: amd64
-Version: 0-2023.10.02.02.01
+Version: 0-2023.10.04.02.02
 Checksums-Md5:
- 8c4ef38022c1846c9bf04850957c4623 5120 ros-noetic-pure-pursuit_0-2023.10.02.02.01_amd64.deb
+ 667a461ddc1ddd6986e9911e7dd44496 5124 ros-noetic-pure-pursuit_0-2023.10.04.02.02_amd64.deb
 Checksums-Sha1:
- 302b0735f9141a7a3982995218db0a4296aae83b 5120 ros-noetic-pure-pursuit_0-2023.10.02.02.01_amd64.deb
+ a9acbef2a78f851b0b958cf23257f9b589b43b69 5124 ros-noetic-pure-pursuit_0-2023.10.04.02.02_amd64.deb
 Checksums-Sha256:
- fcf2d1bb1627c801d2b4b9b63cbd10a73f0c6c3a17e2b09982a7687172c5ff2f 5120 ros-noetic-pure-pursuit_0-2023.10.02.02.01_amd64.deb
+ 0e01f6ec303a60b057153dc0e5788daabcad289d183504d4fde2e50725723aeb 5124 ros-noetic-pure-pursuit_0-2023.10.04.02.02_amd64.deb
 Build-Origin: Ubuntu
 Build-Architecture: amd64
-Build-Date: Mon, 02 Oct 2023 02:02:21 +0000
+Build-Date: Wed, 04 Oct 2023 02:03:35 +0000
 Build-Path: /build/package/package
 Installed-Build-Depends:
  autoconf (= 2.69-11.1),
@@ -111,10 +111,10 @@ Installed-Build-Depends:
  libbrotli1 (= 1.0.7-6ubuntu0.1),
  libbsd0 (= 0.10.0-1),
  libbz2-1.0 (= 1.0.8-2),
- libc-bin (= 2.31-0ubuntu9.9),
- libc-dev-bin (= 2.31-0ubuntu9.9),
- libc6 (= 2.31-0ubuntu9.9),
- libc6-dev (= 2.31-0ubuntu9.9),
+ libc-bin (= 2.31-0ubuntu9.12),
+ libc-dev-bin (= 2.31-0ubuntu9.12),
+ libc6 (= 2.31-0ubuntu9.12),
+ libc6-dev (= 2.31-0ubuntu9.12),
  libcap-ng0 (= 0.7.9-2.1build1),
  libcc1-0 (= 10.5.0-1ubuntu1~20.04),
  libcom-err2 (= 1.45.5-2ubuntu1.1),
@@ -355,4 +355,4 @@ Environment:
  DEB_BUILD_OPTIONS="nocheck parallel=2"
  LANG="C.UTF-8"
  LC_ALL="C.UTF-8"
- SOURCE_DATE_EPOCH="1696212069"
+ SOURCE_DATE_EPOCH="1696384938"
