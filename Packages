@@ -1,16 +1,16 @@
 Package: ros-noetic-pure-pursuit
 Architecture: amd64
-Version: 0-2023.10.20.02.00
+Version: 0-2023.10.21.01.57
 Priority: optional
 Section: misc
 Maintainer: hema <hema@todo.todo>
 Installed-Size: 30
 Depends: ros-noetic-ackermann-msgs, ros-noetic-geometry-msgs, ros-noetic-nav-msgs, ros-noetic-roscpp, ros-noetic-std-msgs, ros-noetic-tf2-geometry-msgs, ros-noetic-tf2-ros
-Filename: ./ros-noetic-pure-pursuit_0-2023.10.20.02.00_amd64.deb
-Size: 5116
-MD5sum: d18a49d53b7377715cdfc51d6aa29d65
-SHA1: b3fe894481d1bc2e220db684396d4f8153e471c6
-SHA256: 8dd1d2d99352375191fc3e8402d75019e2949dad9b0d1adb49c0c082787e1a0b
-SHA512: 753d8ca8b065639fccb7ed8bf99d6b486f140e73bbcef539e7a8afe8341f45cb264995480ef2ec79b7aaf23df491ba0b2b2d7a46e3799c640b1ca7845098cc19
+Filename: ./ros-noetic-pure-pursuit_0-2023.10.21.01.57_amd64.deb
+Size: 5128
+MD5sum: 5d7ac2e60c4e88f6f94715b30650cc2c
+SHA1: 955cdd89efd493dabe713527b6582e5548712147
+SHA256: 4e5f19fd62691b1609c0a960cc5a21edf2561131a0761d2b4eb2e9dc2ae5ff59
+SHA512: 34dd9915151cd66899865703be64ddf51200c24fbbd60f075678ce9b512e404bd36bb970980b926f7e69b8bb3403312e6268319866cb58c7491878ea5f784074
 Description: The pure_pursuit package
 
