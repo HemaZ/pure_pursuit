@@ -2,16 +2,16 @@ Format: 1.0
 Source: ros-noetic-pure-pursuit
 Binary: ros-noetic-pure-pursuit
 Architecture: amd64
-Version: 0-2023.10.26.01.58
+Version: 0-2023.10.27.01.59
 Checksums-Md5:
- c36a19abfc60ef668efa6fc0a224e09c 5116 ros-noetic-pure-pursuit_0-2023.10.26.01.58_amd64.deb
+ 51b880bc43073289eacc324585f1fafd 5124 ros-noetic-pure-pursuit_0-2023.10.27.01.59_amd64.deb
 Checksums-Sha1:
- 3ca5f9164782608c6ce15ec4cff934fa114ad880 5116 ros-noetic-pure-pursuit_0-2023.10.26.01.58_amd64.deb
+ 01e68104abf03a5a57105d725375e9a5e8afb6ea 5124 ros-noetic-pure-pursuit_0-2023.10.27.01.59_amd64.deb
 Checksums-Sha256:
- b931431471a3fd6ced6051e4c9b92f8940a0e79e54cc2e5947def9f29bd9d593 5116 ros-noetic-pure-pursuit_0-2023.10.26.01.58_amd64.deb
+ 1a141b1c6f360adb3ee0f1aaf07be4c8cd6ff7b92ac691965783e6098002144f 5124 ros-noetic-pure-pursuit_0-2023.10.27.01.59_amd64.deb
 Build-Origin: Ubuntu
 Build-Architecture: amd64
-Build-Date: Thu, 26 Oct 2023 02:00:08 +0000
+Build-Date: Fri, 27 Oct 2023 02:00:51 +0000
 Build-Path: /build/package/package
 Installed-Build-Depends:
  autoconf (= 2.69-11.1),
@@ -332,11 +332,11 @@ Installed-Build-Depends:
  ros-noetic-rostime (= 0.7.3-1focal.20230620.181441),
  ros-noetic-rosunit (= 1.15.8-1focal.20210727.061745),
  ros-noetic-std-msgs (= 0.5.13-1focal.20230620.182217),
- ros-noetic-tf2 (= 0.7.6-1focal.20230620.183538),
- ros-noetic-tf2-geometry-msgs (= 0.7.6-1focal.20230620.194215),
- ros-noetic-tf2-msgs (= 0.7.6-1focal.20230620.183347),
- ros-noetic-tf2-py (= 0.7.6-1focal.20230620.184916),
- ros-noetic-tf2-ros (= 0.7.6-1focal.20230620.193831),
+ ros-noetic-tf2 (= 0.7.7-1focal.20231013.184703),
+ ros-noetic-tf2-geometry-msgs (= 0.7.7-1focal.20231013.190041),
+ ros-noetic-tf2-msgs (= 0.7.7-1focal.20231013.184042),
+ ros-noetic-tf2-py (= 0.7.7-1focal.20231013.185259),
+ ros-noetic-tf2-ros (= 0.7.7-1focal.20231013.185611),
  ros-noetic-xmlrpcpp (= 1.16.0-1focal.20230620.181514),
  sed (= 4.7-1),
  sensible-utils (= 0.0.12+nmu1),
@@ -355,4 +355,4 @@ Environment:
  DEB_BUILD_OPTIONS="nocheck parallel=2"
  LANG="C.UTF-8"
  LC_ALL="C.UTF-8"
- SOURCE_DATE_EPOCH="1698285530"
+ SOURCE_DATE_EPOCH="1698371958"
