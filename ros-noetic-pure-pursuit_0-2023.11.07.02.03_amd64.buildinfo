@@ -2,16 +2,16 @@ Format: 1.0
 Source: ros-noetic-pure-pursuit
 Binary: ros-noetic-pure-pursuit
 Architecture: amd64
-Version: 0-2023.11.06.02.04
+Version: 0-2023.11.07.02.03
 Checksums-Md5:
- 40f1e0c4d3b4ab449f5129d27867683b 5116 ros-noetic-pure-pursuit_0-2023.11.06.02.04_amd64.deb
+ 2a3fd5b184e89004c2e4d468d5179421 5120 ros-noetic-pure-pursuit_0-2023.11.07.02.03_amd64.deb
 Checksums-Sha1:
- 2497a065eeba632707ab074ae9998a36df0d584d 5116 ros-noetic-pure-pursuit_0-2023.11.06.02.04_amd64.deb
+ fea003cb512895c1d81711150b0e74ab5662371b 5120 ros-noetic-pure-pursuit_0-2023.11.07.02.03_amd64.deb
 Checksums-Sha256:
- f6c0af8a6323f58d796cd7669f1d8fc34fb6cbd16c67f28a599c1b6151ba5d77 5116 ros-noetic-pure-pursuit_0-2023.11.06.02.04_amd64.deb
+ e0069f1214d1b6d9d4b219d6fda41a08d68d9d19e23a85cfd009146ddbc895b2 5120 ros-noetic-pure-pursuit_0-2023.11.07.02.03_amd64.deb
 Build-Origin: Ubuntu
 Build-Architecture: amd64
-Build-Date: Mon, 06 Nov 2023 02:06:12 +0000
+Build-Date: Tue, 07 Nov 2023 02:04:11 +0000
 Build-Path: /build/package/package
 Installed-Build-Depends:
  autoconf (= 2.69-11.1),
@@ -147,7 +147,7 @@ Installed-Build-Depends:
  libgnutls30 (= 3.6.13-2ubuntu1.8),
  libgomp1 (= 10.5.0-1ubuntu1~20.04),
  libgpg-error0 (= 1.37-1),
- libgssapi-krb5-2 (= 1.17-6ubuntu4.3),
+ libgssapi-krb5-2 (= 1.17-6ubuntu4.4),
  libgssapi3-heimdal (= 7.7.0+dfsg-1ubuntu1.4),
  libgtest-dev (= 1.10.0-2),
  libhcrypto4-heimdal (= 7.7.0+dfsg-1ubuntu1.4),
@@ -161,11 +161,11 @@ Installed-Build-Depends:
  libisl22 (= 0.22.1-1),
  libitm1 (= 10.5.0-1ubuntu1~20.04),
  libjsoncpp1 (= 1.7.4-3.1ubuntu2),
- libk5crypto3 (= 1.17-6ubuntu4.3),
+ libk5crypto3 (= 1.17-6ubuntu4.4),
  libkeyutils1 (= 1.6-6ubuntu1.1),
  libkrb5-26-heimdal (= 7.7.0+dfsg-1ubuntu1.4),
- libkrb5-3 (= 1.17-6ubuntu4.3),
- libkrb5support0 (= 1.17-6ubuntu4.3),
+ libkrb5-3 (= 1.17-6ubuntu4.4),
+ libkrb5support0 (= 1.17-6ubuntu4.4),
  liblapack3 (= 3.9.0-1build1),
  libldap-2.4-2 (= 2.4.49+dfsg-2ubuntu1.9),
  libldap-common (= 2.4.49+dfsg-2ubuntu1.9),
@@ -352,7 +352,7 @@ Installed-Build-Depends:
  zlib1g (= 1:1.2.11.dfsg-2ubuntu1.5),
  zlib1g-dev (= 1:1.2.11.dfsg-2ubuntu1.5)
 Environment:
- DEB_BUILD_OPTIONS="nocheck parallel=2"
+ DEB_BUILD_OPTIONS="nocheck parallel=4"
  LANG="C.UTF-8"
  LC_ALL="C.UTF-8"
- SOURCE_DATE_EPOCH="1699236299"
+ SOURCE_DATE_EPOCH="1699322588"
