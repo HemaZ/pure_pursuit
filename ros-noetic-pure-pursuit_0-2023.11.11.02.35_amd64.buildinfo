@@ -2,16 +2,16 @@ Format: 1.0
 Source: ros-noetic-pure-pursuit
 Binary: ros-noetic-pure-pursuit
 Architecture: amd64
-Version: 0-2023.11.10.02.02
+Version: 0-2023.11.11.02.35
 Checksums-Md5:
- 256896e10a1dfdf5058cca1403b4819b 5116 ros-noetic-pure-pursuit_0-2023.11.10.02.02_amd64.deb
+ 9b252063a6fbfc14f70321ff4122a11d 5128 ros-noetic-pure-pursuit_0-2023.11.11.02.35_amd64.deb
 Checksums-Sha1:
- e0a1bd2bd3338af56fc82381793cabfc6ff2cdb8 5116 ros-noetic-pure-pursuit_0-2023.11.10.02.02_amd64.deb
+ ae43164e1c64c7d13011797308697dba5df67063 5128 ros-noetic-pure-pursuit_0-2023.11.11.02.35_amd64.deb
 Checksums-Sha256:
- 86f7869e82d3fc46eddc8da582826559ab5bd0a3d1c82813bd93628b26d8cf86 5116 ros-noetic-pure-pursuit_0-2023.11.10.02.02_amd64.deb
+ 6d9e9e39c991652b556ef061046e9725d9cf53a71c5cc0ef5ed846e5255e5bf1 5128 ros-noetic-pure-pursuit_0-2023.11.11.02.35_amd64.deb
 Build-Origin: Ubuntu
 Build-Architecture: amd64
-Build-Date: Fri, 10 Nov 2023 02:03:47 +0000
+Build-Date: Sat, 11 Nov 2023 02:36:43 +0000
 Build-Path: /build/package/package
 Installed-Build-Depends:
  autoconf (= 2.69-11.1),
@@ -352,7 +352,7 @@ Installed-Build-Depends:
  zlib1g (= 1:1.2.11.dfsg-2ubuntu1.5),
  zlib1g-dev (= 1:1.2.11.dfsg-2ubuntu1.5)
 Environment:
- DEB_BUILD_OPTIONS="nocheck parallel=2"
+ DEB_BUILD_OPTIONS="nocheck parallel=4"
  LANG="C.UTF-8"
  LC_ALL="C.UTF-8"
- SOURCE_DATE_EPOCH="1699581745"
+ SOURCE_DATE_EPOCH="1699670143"
