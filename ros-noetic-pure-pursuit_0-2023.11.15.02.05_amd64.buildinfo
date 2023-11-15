@@ -2,16 +2,16 @@ Format: 1.0
 Source: ros-noetic-pure-pursuit
 Binary: ros-noetic-pure-pursuit
 Architecture: amd64
-Version: 0-2023.11.14.02.02
+Version: 0-2023.11.15.02.05
 Checksums-Md5:
- 9af89030edfed900504c527451b5acdc 5124 ros-noetic-pure-pursuit_0-2023.11.14.02.02_amd64.deb
+ b017d1fabb1a2a093baa5cf09fd418eb 5116 ros-noetic-pure-pursuit_0-2023.11.15.02.05_amd64.deb
 Checksums-Sha1:
- 98ca6eb8d71680af6c97088e7c7d10bec8778d3c 5124 ros-noetic-pure-pursuit_0-2023.11.14.02.02_amd64.deb
+ c2e58a1dc650cbe375734647ea35f0dc149a82a9 5116 ros-noetic-pure-pursuit_0-2023.11.15.02.05_amd64.deb
 Checksums-Sha256:
- ac34464abe1563aad356e1f1da2a5ac961e824a8d6fd3f5e4f361e15a85cb329 5124 ros-noetic-pure-pursuit_0-2023.11.14.02.02_amd64.deb
+ 3c637ad135cc7c0682f399f362f8f8169c044ee585e26cac7e9408aef9134cd1 5116 ros-noetic-pure-pursuit_0-2023.11.15.02.05_amd64.deb
 Build-Origin: Ubuntu
 Build-Architecture: amd64
-Build-Date: Tue, 14 Nov 2023 02:03:48 +0000
+Build-Date: Wed, 15 Nov 2023 02:06:39 +0000
 Build-Path: /build/package/package
 Installed-Build-Depends:
  autoconf (= 2.69-11.1),
@@ -196,7 +196,7 @@ Installed-Build-Depends:
  libpcre3 (= 2:8.39-12ubuntu0.1),
  libperl5.30 (= 5.30.0-9ubuntu0.4),
  libpipeline1 (= 1.5.2-2build1),
- libprocps8 (= 2:3.3.16-1ubuntu2.3),
+ libprocps8 (= 2:3.3.16-1ubuntu2.4),
  libpsl5 (= 0.21.0-1ubuntu1),
  libpython3-dev (= 3.8.2-0ubuntu2),
  libpython3-stdlib (= 3.8.2-0ubuntu2),
@@ -259,7 +259,7 @@ Installed-Build-Depends:
  perl-modules-5.30 (= 5.30.0-9ubuntu0.4),
  pkg-config (= 0.29.1-0ubuntu4),
  po-debconf (= 1.0.21),
- procps (= 2:3.3.16-1ubuntu2.3),
+ procps (= 2:3.3.16-1ubuntu2.4),
  python3 (= 3.8.2-0ubuntu2),
  python3-bcrypt (= 3.1.7-2ubuntu1),
  python3-catkin-pkg (= 1.0.0-100),
@@ -352,7 +352,7 @@ Installed-Build-Depends:
  zlib1g (= 1:1.2.11.dfsg-2ubuntu1.5),
  zlib1g-dev (= 1:1.2.11.dfsg-2ubuntu1.5)
 Environment:
- DEB_BUILD_OPTIONS="nocheck parallel=2"
+ DEB_BUILD_OPTIONS="nocheck parallel=4"
  LANG="C.UTF-8"
  LC_ALL="C.UTF-8"
- SOURCE_DATE_EPOCH="1699927367"
+ SOURCE_DATE_EPOCH="1700013942"
