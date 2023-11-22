@@ -2,16 +2,16 @@ Format: 1.0
 Source: ros-noetic-pure-pursuit
 Binary: ros-noetic-pure-pursuit
 Architecture: amd64
-Version: 0-2023.11.21.02.09
+Version: 0-2023.11.22.02.08
 Checksums-Md5:
- 8054e32ac5b638a0a90522ccd8c92a47 5116 ros-noetic-pure-pursuit_0-2023.11.21.02.09_amd64.deb
+ 8e2f68af67daa04d57c13ce06d6e0857 5116 ros-noetic-pure-pursuit_0-2023.11.22.02.08_amd64.deb
 Checksums-Sha1:
- 1d7211f1cd8cf49c6deafed71d290ac6a94bc15c 5116 ros-noetic-pure-pursuit_0-2023.11.21.02.09_amd64.deb
+ 7801072b072784115b06a66ccbc2357dc5f994b9 5116 ros-noetic-pure-pursuit_0-2023.11.22.02.08_amd64.deb
 Checksums-Sha256:
- ac28fa78a504e7cae9eda93a3c70dc9a78996d7a80c117fc32df176b1bb8c3db 5116 ros-noetic-pure-pursuit_0-2023.11.21.02.09_amd64.deb
+ 508d0575139cdf2ca10917cd5e84ea60b9485992141229b12a58f493d665d940 5116 ros-noetic-pure-pursuit_0-2023.11.22.02.08_amd64.deb
 Build-Origin: Ubuntu
 Build-Architecture: amd64
-Build-Date: Tue, 21 Nov 2023 02:09:59 +0000
+Build-Date: Wed, 22 Nov 2023 02:08:49 +0000
 Build-Path: /build/package/package
 Installed-Build-Depends:
  autoconf (= 2.69-11.1),
@@ -144,7 +144,7 @@ Installed-Build-Depends:
  libgfortran5 (= 10.5.0-1ubuntu1~20.04),
  libglib2.0-0 (= 2.64.6-1~ubuntu20.04.6),
  libgmp10 (= 2:6.2.0+dfsg-4ubuntu0.1),
- libgnutls30 (= 3.6.13-2ubuntu1.8),
+ libgnutls30 (= 3.6.13-2ubuntu1.9),
  libgomp1 (= 10.5.0-1ubuntu1~20.04),
  libgpg-error0 (= 1.37-1),
  libgssapi-krb5-2 (= 1.17-6ubuntu4.4),
@@ -355,4 +355,4 @@ Environment:
  DEB_BUILD_OPTIONS="nocheck parallel=4"
  LANG="C.UTF-8"
  LC_ALL="C.UTF-8"
- SOURCE_DATE_EPOCH="1700532552"
+ SOURCE_DATE_EPOCH="1700618882"
