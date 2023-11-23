@@ -2,16 +2,16 @@ Format: 1.0
 Source: ros-noetic-pure-pursuit
 Binary: ros-noetic-pure-pursuit
 Architecture: amd64
-Version: 0-2023.11.22.02.08
+Version: 0-2023.11.23.02.04
 Checksums-Md5:
- 8e2f68af67daa04d57c13ce06d6e0857 5116 ros-noetic-pure-pursuit_0-2023.11.22.02.08_amd64.deb
+ 2d6763b9a302b8b272ff1aa458b91b73 5124 ros-noetic-pure-pursuit_0-2023.11.23.02.04_amd64.deb
 Checksums-Sha1:
- 7801072b072784115b06a66ccbc2357dc5f994b9 5116 ros-noetic-pure-pursuit_0-2023.11.22.02.08_amd64.deb
+ f60b218d30743e68b64ae310ae4aa26eb7d776ed 5124 ros-noetic-pure-pursuit_0-2023.11.23.02.04_amd64.deb
 Checksums-Sha256:
- 508d0575139cdf2ca10917cd5e84ea60b9485992141229b12a58f493d665d940 5116 ros-noetic-pure-pursuit_0-2023.11.22.02.08_amd64.deb
+ 04709a817e6d890f2d271affbf628cdc81bb631fbe802f9e206d19647da07302 5124 ros-noetic-pure-pursuit_0-2023.11.23.02.04_amd64.deb
 Build-Origin: Ubuntu
 Build-Architecture: amd64
-Build-Date: Wed, 22 Nov 2023 02:08:49 +0000
+Build-Date: Thu, 23 Nov 2023 02:05:37 +0000
 Build-Path: /build/package/package
 Installed-Build-Depends:
  autoconf (= 2.69-11.1),
@@ -184,7 +184,7 @@ Installed-Build-Depends:
  libncurses6 (= 6.2-0ubuntu2.1),
  libncursesw6 (= 6.2-0ubuntu2.1),
  libnettle7 (= 3.5.1+really3.5.1-2ubuntu0.2),
- libnghttp2-14 (= 1.40.0-1ubuntu0.1),
+ libnghttp2-14 (= 1.40.0-1ubuntu0.2),
  liborocos-kdl-dev (= 1.4.0-7ubuntu1),
  liborocos-kdl1.4 (= 1.4.0-7ubuntu1),
  libp11-kit0 (= 0.23.20-1ubuntu0.1),
@@ -355,4 +355,4 @@ Environment:
  DEB_BUILD_OPTIONS="nocheck parallel=4"
  LANG="C.UTF-8"
  LC_ALL="C.UTF-8"
- SOURCE_DATE_EPOCH="1700618882"
+ SOURCE_DATE_EPOCH="1700705085"
