@@ -2,16 +2,16 @@ Format: 1.0
 Source: ros-noetic-pure-pursuit
 Binary: ros-noetic-pure-pursuit
 Architecture: amd64
-Version: 0-2023.11.27.02.05
+Version: 0-2023.11.28.02.06
 Checksums-Md5:
- c337e7b56edefccaf593cc8162684162 5132 ros-noetic-pure-pursuit_0-2023.11.27.02.05_amd64.deb
+ d5e043da46da416fbc04dfe435e934cb 5124 ros-noetic-pure-pursuit_0-2023.11.28.02.06_amd64.deb
 Checksums-Sha1:
- d2668d39e1291da8483a4111d68365d9a5cec893 5132 ros-noetic-pure-pursuit_0-2023.11.27.02.05_amd64.deb
+ 4ba0c0fb81b00138fc9471fd1faed1cf04369380 5124 ros-noetic-pure-pursuit_0-2023.11.28.02.06_amd64.deb
 Checksums-Sha256:
- ba80f8ab30842e90c9e73011f55bbcdb90a04907696692249fc0c53874c020ef 5132 ros-noetic-pure-pursuit_0-2023.11.27.02.05_amd64.deb
+ 3c9b235da9bd7d32c2d04f0c3a1838f9c8a3926161b09c835d2258242d482371 5124 ros-noetic-pure-pursuit_0-2023.11.28.02.06_amd64.deb
 Build-Origin: Ubuntu
 Build-Architecture: amd64
-Build-Date: Mon, 27 Nov 2023 02:06:02 +0000
+Build-Date: Tue, 28 Nov 2023 02:07:42 +0000
 Build-Path: /build/package/package
 Installed-Build-Depends:
  autoconf (= 2.69-11.1),
@@ -194,16 +194,16 @@ Installed-Build-Depends:
  libpam0g (= 1.3.1-5ubuntu4.6),
  libpcre2-8-0 (= 10.34-7ubuntu0.1),
  libpcre3 (= 2:8.39-12ubuntu0.1),
- libperl5.30 (= 5.30.0-9ubuntu0.4),
+ libperl5.30 (= 5.30.0-9ubuntu0.5),
  libpipeline1 (= 1.5.2-2build1),
  libprocps8 (= 2:3.3.16-1ubuntu2.4),
  libpsl5 (= 0.21.0-1ubuntu1),
  libpython3-dev (= 3.8.2-0ubuntu2),
  libpython3-stdlib (= 3.8.2-0ubuntu2),
- libpython3.8 (= 3.8.10-0ubuntu1~20.04.8),
- libpython3.8-dev (= 3.8.10-0ubuntu1~20.04.8),
- libpython3.8-minimal (= 3.8.10-0ubuntu1~20.04.8),
- libpython3.8-stdlib (= 3.8.10-0ubuntu1~20.04.8),
+ libpython3.8 (= 3.8.10-0ubuntu1~20.04.9),
+ libpython3.8-dev (= 3.8.10-0ubuntu1~20.04.9),
+ libpython3.8-minimal (= 3.8.10-0ubuntu1~20.04.9),
+ libpython3.8-stdlib (= 3.8.10-0ubuntu1~20.04.9),
  libquadmath0 (= 10.5.0-1ubuntu1~20.04),
  libreadline8 (= 8.0-4),
  librhash0 (= 1.3.9-1),
@@ -254,9 +254,9 @@ Installed-Build-Depends:
  ncurses-bin (= 6.2-0ubuntu2.1),
  openssl (= 1.1.1f-1ubuntu2.20),
  patch (= 2.7.6-6),
- perl (= 5.30.0-9ubuntu0.4),
- perl-base (= 5.30.0-9ubuntu0.4),
- perl-modules-5.30 (= 5.30.0-9ubuntu0.4),
+ perl (= 5.30.0-9ubuntu0.5),
+ perl-base (= 5.30.0-9ubuntu0.5),
+ perl-modules-5.30 (= 5.30.0-9ubuntu0.5),
  pkg-config (= 0.29.1-0ubuntu4),
  po-debconf (= 1.0.21),
  procps (= 2:3.3.16-1ubuntu2.4),
@@ -292,9 +292,9 @@ Installed-Build-Depends:
  python3-sip (= 4.19.21+dfsg-1build1),
  python3-six (= 1.14.0-2),
  python3-yaml (= 5.3.1-1ubuntu0.1),
- python3.8 (= 3.8.10-0ubuntu1~20.04.8),
- python3.8-dev (= 3.8.10-0ubuntu1~20.04.8),
- python3.8-minimal (= 3.8.10-0ubuntu1~20.04.8),
+ python3.8 (= 3.8.10-0ubuntu1~20.04.9),
+ python3.8-dev (= 3.8.10-0ubuntu1~20.04.9),
+ python3.8-minimal (= 3.8.10-0ubuntu1~20.04.9),
  readline-common (= 8.0-4),
  ros-noetic-ackermann-msgs (= 1.0.2-1focal.20230620.183229),
  ros-noetic-actionlib (= 1.14.0-1focal.20230620.191724),
@@ -355,4 +355,4 @@ Environment:
  DEB_BUILD_OPTIONS="nocheck parallel=4"
  LANG="C.UTF-8"
  LC_ALL="C.UTF-8"
- SOURCE_DATE_EPOCH="1701050713"
+ SOURCE_DATE_EPOCH="1701137198"
