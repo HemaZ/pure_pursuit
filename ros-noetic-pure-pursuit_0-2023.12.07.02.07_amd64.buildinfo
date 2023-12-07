@@ -2,16 +2,16 @@ Format: 1.0
 Source: ros-noetic-pure-pursuit
 Binary: ros-noetic-pure-pursuit
 Architecture: amd64
-Version: 0-2023.12.06.02.06
+Version: 0-2023.12.07.02.07
 Checksums-Md5:
- 02e398ad7be2a66af7c9522fd4f668ac 5124 ros-noetic-pure-pursuit_0-2023.12.06.02.06_amd64.deb
+ 9df67a08b2580f7fb796a681ae800720 5120 ros-noetic-pure-pursuit_0-2023.12.07.02.07_amd64.deb
 Checksums-Sha1:
- 61fb27e26d99c761aefa6a21c7be3420bfce2c47 5124 ros-noetic-pure-pursuit_0-2023.12.06.02.06_amd64.deb
+ 30befee7497312800f26ee7c13bc342e6606604f 5120 ros-noetic-pure-pursuit_0-2023.12.07.02.07_amd64.deb
 Checksums-Sha256:
- 743d84766b635b7b03c1df9bd622449dd8a3b4d8bba18bef5c02795e03489f41 5124 ros-noetic-pure-pursuit_0-2023.12.06.02.06_amd64.deb
+ b86eb5716884b1d72251c9273fbfb100d4d8d1fab0a9a0fcb3ddfeeff3c00c76 5120 ros-noetic-pure-pursuit_0-2023.12.07.02.07_amd64.deb
 Build-Origin: Ubuntu
 Build-Architecture: amd64
-Build-Date: Wed, 06 Dec 2023 02:07:11 +0000
+Build-Date: Thu, 07 Dec 2023 02:08:15 +0000
 Build-Path: /build/package/package
 Installed-Build-Depends:
  autoconf (= 2.69-11.1),
@@ -125,7 +125,7 @@ Installed-Build-Depends:
  libcrypt1 (= 1:4.4.10-10ubuntu4),
  libctf-nobfd0 (= 2.34-6ubuntu1.6),
  libctf0 (= 2.34-6ubuntu1.6),
- libcurl4 (= 7.68.0-1ubuntu2.20),
+ libcurl4 (= 7.68.0-1ubuntu2.21),
  libdb5.3 (= 5.3.28+dfsg1-0.6ubuntu2),
  libdebconfclient0 (= 0.251ubuntu1),
  libdebhelper-perl (= 12.10ubuntu1),
@@ -265,7 +265,7 @@ Installed-Build-Depends:
  python3-catkin-pkg (= 1.0.0-100),
  python3-catkin-pkg-modules (= 1.0.0-1),
  python3-cffi-backend (= 1.14.0-1build1),
- python3-cryptography (= 2.8-3ubuntu0.1),
+ python3-cryptography (= 2.8-3ubuntu0.2),
  python3-dateutil (= 2.7.3-3ubuntu1),
  python3-defusedxml (= 0.6.0-2),
  python3-dev (= 3.8.2-0ubuntu2),
@@ -355,4 +355,4 @@ Environment:
  DEB_BUILD_OPTIONS="nocheck parallel=4"
  LANG="C.UTF-8"
  LC_ALL="C.UTF-8"
- SOURCE_DATE_EPOCH="1701828381"
+ SOURCE_DATE_EPOCH="1701914841"
