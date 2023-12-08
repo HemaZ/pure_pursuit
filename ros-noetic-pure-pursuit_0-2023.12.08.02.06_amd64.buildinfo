@@ -2,16 +2,16 @@ Format: 1.0
 Source: ros-noetic-pure-pursuit
 Binary: ros-noetic-pure-pursuit
 Architecture: amd64
-Version: 0-2023.12.07.02.07
+Version: 0-2023.12.08.02.06
 Checksums-Md5:
- 9df67a08b2580f7fb796a681ae800720 5120 ros-noetic-pure-pursuit_0-2023.12.07.02.07_amd64.deb
+ 18db0de36d1aafbd403066d4bdc98d4c 5120 ros-noetic-pure-pursuit_0-2023.12.08.02.06_amd64.deb
 Checksums-Sha1:
- 30befee7497312800f26ee7c13bc342e6606604f 5120 ros-noetic-pure-pursuit_0-2023.12.07.02.07_amd64.deb
+ 8cbae263f725b526777cf05906d655320203ad3c 5120 ros-noetic-pure-pursuit_0-2023.12.08.02.06_amd64.deb
 Checksums-Sha256:
- b86eb5716884b1d72251c9273fbfb100d4d8d1fab0a9a0fcb3ddfeeff3c00c76 5120 ros-noetic-pure-pursuit_0-2023.12.07.02.07_amd64.deb
+ 5380e582421d55da4fa3d5f15f11e8cb01579b3fe230f10a92ed022db253464a 5120 ros-noetic-pure-pursuit_0-2023.12.08.02.06_amd64.deb
 Build-Origin: Ubuntu
 Build-Architecture: amd64
-Build-Date: Thu, 07 Dec 2023 02:08:15 +0000
+Build-Date: Fri, 08 Dec 2023 02:07:34 +0000
 Build-Path: /build/package/package
 Installed-Build-Depends:
  autoconf (= 2.69-11.1),
@@ -111,10 +111,10 @@ Installed-Build-Depends:
  libbrotli1 (= 1.0.7-6ubuntu0.1),
  libbsd0 (= 0.10.0-1),
  libbz2-1.0 (= 1.0.8-2),
- libc-bin (= 2.31-0ubuntu9.12),
- libc-dev-bin (= 2.31-0ubuntu9.12),
- libc6 (= 2.31-0ubuntu9.12),
- libc6-dev (= 2.31-0ubuntu9.12),
+ libc-bin (= 2.31-0ubuntu9.14),
+ libc-dev-bin (= 2.31-0ubuntu9.14),
+ libc6 (= 2.31-0ubuntu9.14),
+ libc6-dev (= 2.31-0ubuntu9.14),
  libcap-ng0 (= 0.7.9-2.1build1),
  libcc1-0 (= 10.5.0-1ubuntu1~20.04),
  libcom-err2 (= 1.45.5-2ubuntu1.1),
@@ -241,7 +241,7 @@ Installed-Build-Depends:
  libxml2 (= 2.9.10+dfsg-5ubuntu0.20.04.6),
  libyaml-0-2 (= 0.2.2-1),
  libzstd1 (= 1.4.4+dfsg-3ubuntu0.1),
- linux-libc-dev (= 5.4.0-167.184),
+ linux-libc-dev (= 5.4.0-169.187),
  login (= 1:4.8.1-1ubuntu5.20.04.4),
  lsb-base (= 11.1.0ubuntu2),
  lsb-release (= 11.1.0ubuntu2),
@@ -355,4 +355,4 @@ Environment:
  DEB_BUILD_OPTIONS="nocheck parallel=4"
  LANG="C.UTF-8"
  LC_ALL="C.UTF-8"
- SOURCE_DATE_EPOCH="1701914841"
+ SOURCE_DATE_EPOCH="1702001206"
