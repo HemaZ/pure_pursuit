@@ -2,16 +2,16 @@ Format: 1.0
 Source: ros-noetic-pure-pursuit
 Binary: ros-noetic-pure-pursuit
 Architecture: amd64
-Version: 0-2023.12.10.02.08
+Version: 0-2023.12.11.02.06
 Checksums-Md5:
- 4c445176d53443ad9946ccc74560227c 5128 ros-noetic-pure-pursuit_0-2023.12.10.02.08_amd64.deb
+ a907eb87876a3b144eab6dfadd774ad1 5120 ros-noetic-pure-pursuit_0-2023.12.11.02.06_amd64.deb
 Checksums-Sha1:
- 36ceb708db74803a126ec600f3c8cc6f60924834 5128 ros-noetic-pure-pursuit_0-2023.12.10.02.08_amd64.deb
+ cd1a5d74089015d89726d8d598764268d6fc79d2 5120 ros-noetic-pure-pursuit_0-2023.12.11.02.06_amd64.deb
 Checksums-Sha256:
- 2bcd19992c600e38ced4469d9f7eac9c46eca1d4d71a41c4a2f1ee0838413f35 5128 ros-noetic-pure-pursuit_0-2023.12.10.02.08_amd64.deb
+ 82041d5119a719908ec7fc8b1fccc122691653c08046fed8ca74fe751ff2ebba 5120 ros-noetic-pure-pursuit_0-2023.12.11.02.06_amd64.deb
 Build-Origin: Ubuntu
 Build-Architecture: amd64
-Build-Date: Sun, 10 Dec 2023 02:09:56 +0000
+Build-Date: Mon, 11 Dec 2023 02:07:32 +0000
 Build-Path: /build/package/package
 Installed-Build-Depends:
  autoconf (= 2.69-11.1),
@@ -343,7 +343,7 @@ Installed-Build-Depends:
  sgml-base (= 1.29.1),
  sudo (= 1.8.31-1ubuntu1.5),
  sysvinit-utils (= 2.96-2.1ubuntu1),
- tar (= 1.30+dfsg-7ubuntu0.20.04.3),
+ tar (= 1.30+dfsg-7ubuntu0.20.04.4),
  tzdata (= 2023c-0ubuntu0.20.04.2),
  util-linux (= 2.34-0.1ubuntu9.4),
  uuid-dev (= 2.34-0.1ubuntu9.4),
@@ -355,4 +355,4 @@ Environment:
  DEB_BUILD_OPTIONS="nocheck parallel=4"
  LANG="C.UTF-8"
  LC_ALL="C.UTF-8"
- SOURCE_DATE_EPOCH="1702174123"
+ SOURCE_DATE_EPOCH="1702260401"
