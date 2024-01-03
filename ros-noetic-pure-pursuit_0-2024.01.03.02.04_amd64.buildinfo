@@ -2,16 +2,16 @@ Format: 1.0
 Source: ros-noetic-pure-pursuit
 Binary: ros-noetic-pure-pursuit
 Architecture: amd64
-Version: 0-2024.01.02.02.06
+Version: 0-2024.01.03.02.04
 Checksums-Md5:
- 07b682a8746abe2e27a9e141b832cc4d 5116 ros-noetic-pure-pursuit_0-2024.01.02.02.06_amd64.deb
+ ba68cd4b8408e536967e877cbb695bb8 5116 ros-noetic-pure-pursuit_0-2024.01.03.02.04_amd64.deb
 Checksums-Sha1:
- 040d81fad56cca44a47d635bad2439b711d2f3a6 5116 ros-noetic-pure-pursuit_0-2024.01.02.02.06_amd64.deb
+ e94aea8d6b5ee795fb0255c4a41b929d132ddcc5 5116 ros-noetic-pure-pursuit_0-2024.01.03.02.04_amd64.deb
 Checksums-Sha256:
- 969cd52e441fb91c31a0ca6111c4bd69a4134b3b6a9c49063ca1a55a4febc54f 5116 ros-noetic-pure-pursuit_0-2024.01.02.02.06_amd64.deb
+ 039e55210734700101ad58522dc99821e83fde5096dafd2aebd8c9c93addc398 5116 ros-noetic-pure-pursuit_0-2024.01.03.02.04_amd64.deb
 Build-Origin: Ubuntu
 Build-Architecture: amd64
-Build-Date: Tue, 02 Jan 2024 02:07:03 +0000
+Build-Date: Wed, 03 Jan 2024 02:05:03 +0000
 Build-Path: /build/package/package
 Installed-Build-Depends:
  autoconf (= 2.69-11.1),
@@ -41,7 +41,7 @@ Installed-Build-Depends:
  dh-autoreconf (= 19),
  dh-strip-nondeterminism (= 1.7.0-1),
  diffutils (= 1:3.7-3),
- distro-info-data (= 0.43ubuntu1.14),
+ distro-info-data (= 0.43ubuntu1.15),
  docutils-common (= 0.16+dfsg-2),
  dpkg (= 1.19.7ubuntu3.2),
  dpkg-dev (= 1.19.7ubuntu3.2),
@@ -355,4 +355,4 @@ Environment:
  DEB_BUILD_OPTIONS="nocheck parallel=4"
  LANG="C.UTF-8"
  LC_ALL="C.UTF-8"
- SOURCE_DATE_EPOCH="1704161175"
+ SOURCE_DATE_EPOCH="1704247440"
