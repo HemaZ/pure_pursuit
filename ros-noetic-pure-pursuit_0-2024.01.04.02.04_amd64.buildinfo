@@ -2,16 +2,16 @@ Format: 1.0
 Source: ros-noetic-pure-pursuit
 Binary: ros-noetic-pure-pursuit
 Architecture: amd64
-Version: 0-2024.01.03.02.04
+Version: 0-2024.01.04.02.04
 Checksums-Md5:
- ba68cd4b8408e536967e877cbb695bb8 5116 ros-noetic-pure-pursuit_0-2024.01.03.02.04_amd64.deb
+ 378a153e139d9abdf374e5ddb739a201 5124 ros-noetic-pure-pursuit_0-2024.01.04.02.04_amd64.deb
 Checksums-Sha1:
- e94aea8d6b5ee795fb0255c4a41b929d132ddcc5 5116 ros-noetic-pure-pursuit_0-2024.01.03.02.04_amd64.deb
+ c1e7512e986198d4ace3978b193211d48563b450 5124 ros-noetic-pure-pursuit_0-2024.01.04.02.04_amd64.deb
 Checksums-Sha256:
- 039e55210734700101ad58522dc99821e83fde5096dafd2aebd8c9c93addc398 5116 ros-noetic-pure-pursuit_0-2024.01.03.02.04_amd64.deb
+ 2998fc570d8cdb53920cef7bf1b26b407eb3a4d4d12aac448b2f37670c626599 5124 ros-noetic-pure-pursuit_0-2024.01.04.02.04_amd64.deb
 Build-Origin: Ubuntu
 Build-Architecture: amd64
-Build-Date: Wed, 03 Jan 2024 02:05:03 +0000
+Build-Date: Thu, 04 Jan 2024 02:05:33 +0000
 Build-Path: /build/package/package
 Installed-Build-Depends:
  autoconf (= 2.69-11.1),
@@ -218,7 +218,7 @@ Installed-Build-Depends:
  libsigsegv2 (= 2.12-2),
  libsmartcols1 (= 2.34-0.1ubuntu9.4),
  libsodium23 (= 1.0.18-1),
- libsqlite3-0 (= 3.31.1-4ubuntu0.5),
+ libsqlite3-0 (= 3.31.1-4ubuntu0.6),
  libssh-4 (= 0.9.3-2ubuntu2.4),
  libssl1.1 (= 1.1.1f-1ubuntu2.20),
  libstdc++-9-dev (= 9.4.0-1ubuntu1~20.04.2),
@@ -355,4 +355,4 @@ Environment:
  DEB_BUILD_OPTIONS="nocheck parallel=4"
  LANG="C.UTF-8"
  LC_ALL="C.UTF-8"
- SOURCE_DATE_EPOCH="1704247440"
+ SOURCE_DATE_EPOCH="1704333862"
