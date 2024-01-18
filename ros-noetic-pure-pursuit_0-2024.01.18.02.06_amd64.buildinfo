@@ -2,16 +2,16 @@ Format: 1.0
 Source: ros-noetic-pure-pursuit
 Binary: ros-noetic-pure-pursuit
 Architecture: amd64
-Version: 0-2024.01.17.02.07
+Version: 0-2024.01.18.02.06
 Checksums-Md5:
- a84f1c9d230fc41abe9374061f5e9566 5120 ros-noetic-pure-pursuit_0-2024.01.17.02.07_amd64.deb
+ 927876b83c572c2bfd7ece47f53ff14e 5128 ros-noetic-pure-pursuit_0-2024.01.18.02.06_amd64.deb
 Checksums-Sha1:
- 7fe93dde43588ba8fb3afb3442a7348cc7f86ebb 5120 ros-noetic-pure-pursuit_0-2024.01.17.02.07_amd64.deb
+ c0f06320cede5a90696285e28bc166008a5a1ee5 5128 ros-noetic-pure-pursuit_0-2024.01.18.02.06_amd64.deb
 Checksums-Sha256:
- 642592c1bbfa67e0cc01336acd32b2a4bdcf886821abc91c174d2b8edbeb217f 5120 ros-noetic-pure-pursuit_0-2024.01.17.02.07_amd64.deb
+ 8684d7ecab0b35a9fb258b07b3704db527f0ecd15292a741068d2090e265a59d 5128 ros-noetic-pure-pursuit_0-2024.01.18.02.06_amd64.deb
 Build-Origin: Ubuntu
 Build-Architecture: amd64
-Build-Date: Wed, 17 Jan 2024 02:07:59 +0000
+Build-Date: Thu, 18 Jan 2024 02:07:33 +0000
 Build-Path: /build/package/package
 Installed-Build-Depends:
  autoconf (= 2.69-11.1),
@@ -188,10 +188,10 @@ Installed-Build-Depends:
  liborocos-kdl-dev (= 1.4.0-7ubuntu1),
  liborocos-kdl1.4 (= 1.4.0-7ubuntu1),
  libp11-kit0 (= 0.23.20-1ubuntu0.1),
- libpam-modules (= 1.3.1-5ubuntu4.6),
- libpam-modules-bin (= 1.3.1-5ubuntu4.6),
- libpam-runtime (= 1.3.1-5ubuntu4.6),
- libpam0g (= 1.3.1-5ubuntu4.6),
+ libpam-modules (= 1.3.1-5ubuntu4.7),
+ libpam-modules-bin (= 1.3.1-5ubuntu4.7),
+ libpam-runtime (= 1.3.1-5ubuntu4.7),
+ libpam0g (= 1.3.1-5ubuntu4.7),
  libpcre2-8-0 (= 10.34-7ubuntu0.1),
  libpcre3 (= 2:8.39-12ubuntu0.1),
  libperl5.30 (= 5.30.0-9ubuntu0.5),
@@ -355,4 +355,4 @@ Environment:
  DEB_BUILD_OPTIONS="nocheck parallel=4"
  LANG="C.UTF-8"
  LC_ALL="C.UTF-8"
- SOURCE_DATE_EPOCH="1705457231"
+ SOURCE_DATE_EPOCH="1705543604"
