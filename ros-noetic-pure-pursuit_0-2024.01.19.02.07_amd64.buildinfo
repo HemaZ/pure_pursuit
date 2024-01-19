@@ -2,23 +2,23 @@ Format: 1.0
 Source: ros-noetic-pure-pursuit
 Binary: ros-noetic-pure-pursuit
 Architecture: amd64
-Version: 0-2024.01.18.02.06
+Version: 0-2024.01.19.02.07
 Checksums-Md5:
- 927876b83c572c2bfd7ece47f53ff14e 5128 ros-noetic-pure-pursuit_0-2024.01.18.02.06_amd64.deb
+ 2a0a07651a1faee1283d661f2c033a64 5132 ros-noetic-pure-pursuit_0-2024.01.19.02.07_amd64.deb
 Checksums-Sha1:
- c0f06320cede5a90696285e28bc166008a5a1ee5 5128 ros-noetic-pure-pursuit_0-2024.01.18.02.06_amd64.deb
+ e9b6a2441905f06bb68cd57a433c58d502395d13 5132 ros-noetic-pure-pursuit_0-2024.01.19.02.07_amd64.deb
 Checksums-Sha256:
- 8684d7ecab0b35a9fb258b07b3704db527f0ecd15292a741068d2090e265a59d 5128 ros-noetic-pure-pursuit_0-2024.01.18.02.06_amd64.deb
+ 9f056eced0443328c7b8c5c3df23469f64420465598d410a76a74167ecf120ee 5132 ros-noetic-pure-pursuit_0-2024.01.19.02.07_amd64.deb
 Build-Origin: Ubuntu
 Build-Architecture: amd64
-Build-Date: Thu, 18 Jan 2024 02:07:33 +0000
+Build-Date: Fri, 19 Jan 2024 02:08:39 +0000
 Build-Path: /build/package/package
 Installed-Build-Depends:
  autoconf (= 2.69-11.1),
  automake (= 1:1.16.1-4ubuntu6),
  autopoint (= 0.19.8.1-10build1),
  autotools-dev (= 20180224.1),
- base-files (= 11ubuntu5.7),
+ base-files (= 11ubuntu5.8),
  base-passwd (= 3.5.47),
  bash (= 5.0-6ubuntu1.2),
  binutils (= 2.34-6ubuntu1.8),
@@ -355,4 +355,4 @@ Environment:
  DEB_BUILD_OPTIONS="nocheck parallel=4"
  LANG="C.UTF-8"
  LC_ALL="C.UTF-8"
- SOURCE_DATE_EPOCH="1705543604"
+ SOURCE_DATE_EPOCH="1705630071"
