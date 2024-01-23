@@ -2,16 +2,16 @@ Format: 1.0
 Source: ros-noetic-pure-pursuit
 Binary: ros-noetic-pure-pursuit
 Architecture: amd64
-Version: 0-2024.01.22.02.10
+Version: 0-2024.01.23.02.08
 Checksums-Md5:
- b97b6df54bd5a015ccf6e1b3bb788b90 5132 ros-noetic-pure-pursuit_0-2024.01.22.02.10_amd64.deb
+ ea53c737f0b201f415074ea81cffc500 5136 ros-noetic-pure-pursuit_0-2024.01.23.02.08_amd64.deb
 Checksums-Sha1:
- ab85ee8e4c00ddac2fd62e094260d9eb89957c13 5132 ros-noetic-pure-pursuit_0-2024.01.22.02.10_amd64.deb
+ 6d262eef8b25e01c1fe43e7cdfa195a424bc489f 5136 ros-noetic-pure-pursuit_0-2024.01.23.02.08_amd64.deb
 Checksums-Sha256:
- 4fabb585eb8ff68675f61624893ca19c8079da7c346354390d77adeff0649d9a 5132 ros-noetic-pure-pursuit_0-2024.01.22.02.10_amd64.deb
+ 5f0a67b4139e9edf20fb37367441f9b3f746c834532d2efaa89bb86ab603cc49 5136 ros-noetic-pure-pursuit_0-2024.01.23.02.08_amd64.deb
 Build-Origin: Ubuntu
 Build-Architecture: amd64
-Build-Date: Mon, 22 Jan 2024 02:12:03 +0000
+Build-Date: Tue, 23 Jan 2024 02:09:24 +0000
 Build-Path: /build/package/package
 Installed-Build-Depends:
  autoconf (= 2.69-11.1),
@@ -144,7 +144,7 @@ Installed-Build-Depends:
  libgfortran5 (= 10.5.0-1ubuntu1~20.04),
  libglib2.0-0 (= 2.64.6-1~ubuntu20.04.6),
  libgmp10 (= 2:6.2.0+dfsg-4ubuntu0.1),
- libgnutls30 (= 3.6.13-2ubuntu1.9),
+ libgnutls30 (= 3.6.13-2ubuntu1.10),
  libgomp1 (= 10.5.0-1ubuntu1~20.04),
  libgpg-error0 (= 1.37-1),
  libgssapi-krb5-2 (= 1.17-6ubuntu4.4),
@@ -219,12 +219,12 @@ Installed-Build-Depends:
  libsmartcols1 (= 2.34-0.1ubuntu9.4),
  libsodium23 (= 1.0.18-1),
  libsqlite3-0 (= 3.31.1-4ubuntu0.6),
- libssh-4 (= 0.9.3-2ubuntu2.4),
+ libssh-4 (= 0.9.3-2ubuntu2.5),
  libssl1.1 (= 1.1.1f-1ubuntu2.20),
  libstdc++-9-dev (= 9.4.0-1ubuntu1~20.04.2),
  libstdc++6 (= 10.5.0-1ubuntu1~20.04),
  libsub-override-perl (= 0.09-2),
- libsystemd0 (= 245.4-4ubuntu3.22),
+ libsystemd0 (= 245.4-4ubuntu3.23),
  libtasn1-6 (= 4.16.0-2),
  libtinfo6 (= 6.2-0ubuntu2.1),
  libtinyxml2-6a (= 7.0.0+dfsg-1build1),
@@ -233,7 +233,7 @@ Installed-Build-Depends:
  libtsan0 (= 10.5.0-1ubuntu1~20.04),
  libubsan1 (= 10.5.0-1ubuntu1~20.04),
  libuchardet0 (= 0.0.6-3build1),
- libudev1 (= 245.4-4ubuntu3.22),
+ libudev1 (= 245.4-4ubuntu3.23),
  libunistring2 (= 0.9.10-2),
  libuuid1 (= 2.34-0.1ubuntu9.4),
  libuv1 (= 1.34.2-1ubuntu1.3),
@@ -355,4 +355,4 @@ Environment:
  DEB_BUILD_OPTIONS="nocheck parallel=4"
  LANG="C.UTF-8"
  LC_ALL="C.UTF-8"
- SOURCE_DATE_EPOCH="1705889458"
+ SOURCE_DATE_EPOCH="1705975716"
