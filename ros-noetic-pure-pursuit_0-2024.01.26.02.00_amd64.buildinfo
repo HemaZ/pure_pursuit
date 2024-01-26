@@ -2,16 +2,16 @@ Format: 1.0
 Source: ros-noetic-pure-pursuit
 Binary: ros-noetic-pure-pursuit
 Architecture: amd64
-Version: 0-2024.01.25.02.09
+Version: 0-2024.01.26.02.00
 Checksums-Md5:
- 07f423547a02f1dceeb6682142671daa 5120 ros-noetic-pure-pursuit_0-2024.01.25.02.09_amd64.deb
+ 3227e5264886157ea17e28bc42594858 5120 ros-noetic-pure-pursuit_0-2024.01.26.02.00_amd64.deb
 Checksums-Sha1:
- 33f94b6a45b28f22641369d338dc1d6181fba8de 5120 ros-noetic-pure-pursuit_0-2024.01.25.02.09_amd64.deb
+ cb632d3607a799d89c2d15ffd97a766b82eac0a3 5120 ros-noetic-pure-pursuit_0-2024.01.26.02.00_amd64.deb
 Checksums-Sha256:
- 8a501a120bcb44feb3c0f161203fe95d08cacbc312b4f91fa0f79e3cd9fc0661 5120 ros-noetic-pure-pursuit_0-2024.01.25.02.09_amd64.deb
+ 44eb2ed808d05f2d51ee65b6abfea6f75af658eaad5b5cc3bb00a62edd254215 5120 ros-noetic-pure-pursuit_0-2024.01.26.02.00_amd64.deb
 Build-Origin: Ubuntu
 Build-Architecture: amd64
-Build-Date: Thu, 25 Jan 2024 02:09:54 +0000
+Build-Date: Fri, 26 Jan 2024 02:01:31 +0000
 Build-Path: /build/package/package
 Installed-Build-Depends:
  autoconf (= 2.69-11.1),
@@ -279,7 +279,7 @@ Installed-Build-Depends:
  python3-netifaces (= 0.10.4-1ubuntu4),
  python3-nose (= 1.3.7-5),
  python3-numpy (= 1:1.17.4-5ubuntu3.1),
- python3-paramiko (= 2.6.0-2ubuntu0.1),
+ python3-paramiko (= 2.6.0-2ubuntu0.3),
  python3-pkg-resources (= 45.2.0-1ubuntu0.1),
  python3-pykdl (= 1.4.0-7ubuntu1),
  python3-pyparsing (= 2.4.6-1),
@@ -355,4 +355,4 @@ Environment:
  DEB_BUILD_OPTIONS="nocheck parallel=4"
  LANG="C.UTF-8"
  LC_ALL="C.UTF-8"
- SOURCE_DATE_EPOCH="1706148545"
+ SOURCE_DATE_EPOCH="1706234427"
