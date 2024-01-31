@@ -2,16 +2,16 @@ Format: 1.0
 Source: ros-noetic-pure-pursuit
 Binary: ros-noetic-pure-pursuit
 Architecture: amd64
-Version: 0-2024.01.30.01.58
+Version: 0-2024.01.31.01.58
 Checksums-Md5:
- 1eeccbfc22e0f6abc013de8640e8e68c 5128 ros-noetic-pure-pursuit_0-2024.01.30.01.58_amd64.deb
+ ccae4c4c0f6f7f9c6e72bf9b838a802f 5124 ros-noetic-pure-pursuit_0-2024.01.31.01.58_amd64.deb
 Checksums-Sha1:
- 3519b728a38dd47a89b1a44c2490775516ab013e 5128 ros-noetic-pure-pursuit_0-2024.01.30.01.58_amd64.deb
+ 458ddd3fb3f6ff62b27f6ee7c3ff33a16533f1a3 5124 ros-noetic-pure-pursuit_0-2024.01.31.01.58_amd64.deb
 Checksums-Sha256:
- 79a626c77379d29b90a0855e4d3329e6430311c29e8bcfc68e676649da13f2a3 5128 ros-noetic-pure-pursuit_0-2024.01.30.01.58_amd64.deb
+ 61452dcb24c49615e437fe9e848be9bf298d573d9791ab5f2cec26abeb2dd5f8 5124 ros-noetic-pure-pursuit_0-2024.01.31.01.58_amd64.deb
 Build-Origin: Ubuntu
 Build-Architecture: amd64
-Build-Date: Tue, 30 Jan 2024 01:58:49 +0000
+Build-Date: Wed, 31 Jan 2024 01:59:23 +0000
 Build-Path: /build/package/package
 Installed-Build-Depends:
  autoconf (= 2.69-11.1),
@@ -167,9 +167,9 @@ Installed-Build-Depends:
  libkrb5-3 (= 1.17-6ubuntu4.4),
  libkrb5support0 (= 1.17-6ubuntu4.4),
  liblapack3 (= 3.9.0-1build1),
- libldap-2.4-2 (= 2.4.49+dfsg-2ubuntu1.9),
- libldap-common (= 2.4.49+dfsg-2ubuntu1.9),
- libldap2-dev (= 2.4.49+dfsg-2ubuntu1.9),
+ libldap-2.4-2 (= 2.4.49+dfsg-2ubuntu1.10),
+ libldap-common (= 2.4.49+dfsg-2ubuntu1.10),
+ libldap2-dev (= 2.4.49+dfsg-2ubuntu1.10),
  liblog4cxx-dev (= 0.10.0-15ubuntu2),
  liblog4cxx10v5 (= 0.10.0-15ubuntu2),
  liblsan0 (= 10.5.0-1ubuntu1~20.04),
@@ -355,4 +355,4 @@ Environment:
  DEB_BUILD_OPTIONS="nocheck parallel=4"
  LANG="C.UTF-8"
  LC_ALL="C.UTF-8"
- SOURCE_DATE_EPOCH="1706579880"
+ SOURCE_DATE_EPOCH="1706666313"
