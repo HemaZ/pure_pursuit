@@ -2,16 +2,16 @@ Format: 1.0
 Source: ros-noetic-pure-pursuit
 Binary: ros-noetic-pure-pursuit
 Architecture: amd64
-Version: 0-2024.02.05.02.03
+Version: 0-2024.02.06.01.57
 Checksums-Md5:
- 86f8ee90c4a1f4a1e441e41fe1bc1237 5116 ros-noetic-pure-pursuit_0-2024.02.05.02.03_amd64.deb
+ 5dcd814f0196dc2efb45167966711f67 5128 ros-noetic-pure-pursuit_0-2024.02.06.01.57_amd64.deb
 Checksums-Sha1:
- 59c6bb040b6d9461ff39956c563456eba093d73c 5116 ros-noetic-pure-pursuit_0-2024.02.05.02.03_amd64.deb
+ 26fb896280a7b9319da749dfe38d04df0490babf 5128 ros-noetic-pure-pursuit_0-2024.02.06.01.57_amd64.deb
 Checksums-Sha256:
- bf561ff054d3f94876a9d5fa1e8cfeea3ae300631a2d4b6a285ad3ffc93f7e92 5116 ros-noetic-pure-pursuit_0-2024.02.05.02.03_amd64.deb
+ 3f35fd08901a4afb2c36c272a1136e1d59c4d2cf8e4e6188ce951d04ec62bf81 5128 ros-noetic-pure-pursuit_0-2024.02.06.01.57_amd64.deb
 Build-Origin: Ubuntu
 Build-Architecture: amd64
-Build-Date: Mon, 05 Feb 2024 02:04:45 +0000
+Build-Date: Tue, 06 Feb 2024 01:58:24 +0000
 Build-Path: /build/package/package
 Installed-Build-Depends:
  autoconf (= 2.69-11.1),
@@ -220,7 +220,7 @@ Installed-Build-Depends:
  libsodium23 (= 1.0.18-1),
  libsqlite3-0 (= 3.31.1-4ubuntu0.6),
  libssh-4 (= 0.9.3-2ubuntu2.5),
- libssl1.1 (= 1.1.1f-1ubuntu2.20),
+ libssl1.1 (= 1.1.1f-1ubuntu2.21),
  libstdc++-9-dev (= 9.4.0-1ubuntu1~20.04.2),
  libstdc++6 (= 10.5.0-1ubuntu1~20.04),
  libsub-override-perl (= 0.09-2),
@@ -252,7 +252,7 @@ Installed-Build-Depends:
  mime-support (= 3.64ubuntu1),
  ncurses-base (= 6.2-0ubuntu2.1),
  ncurses-bin (= 6.2-0ubuntu2.1),
- openssl (= 1.1.1f-1ubuntu2.20),
+ openssl (= 1.1.1f-1ubuntu2.21),
  patch (= 2.7.6-6),
  perl (= 5.30.0-9ubuntu0.5),
  perl-base (= 5.30.0-9ubuntu0.5),
@@ -355,4 +355,4 @@ Environment:
  DEB_BUILD_OPTIONS="nocheck parallel=4"
  LANG="C.UTF-8"
  LC_ALL="C.UTF-8"
- SOURCE_DATE_EPOCH="1707098622"
+ SOURCE_DATE_EPOCH="1707184642"
