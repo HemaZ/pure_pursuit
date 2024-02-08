@@ -2,16 +2,16 @@ Format: 1.0
 Source: ros-noetic-pure-pursuit
 Binary: ros-noetic-pure-pursuit
 Architecture: amd64
-Version: 0-2024.02.07.01.56
+Version: 0-2024.02.08.01.57
 Checksums-Md5:
- 6da717f731e59a60fe719d259e156e2b 5128 ros-noetic-pure-pursuit_0-2024.02.07.01.56_amd64.deb
+ 1948a1326dd7a6d9a533037b89e2976d 5128 ros-noetic-pure-pursuit_0-2024.02.08.01.57_amd64.deb
 Checksums-Sha1:
- 64ff1d360313b80c53e4f46c52cc9aedbfa4ef54 5128 ros-noetic-pure-pursuit_0-2024.02.07.01.56_amd64.deb
+ 7581735b5021235385e29b4177098cb4ec62200e 5128 ros-noetic-pure-pursuit_0-2024.02.08.01.57_amd64.deb
 Checksums-Sha256:
- b85eab2593971ecfd27da1d91e80c16caf6045cdb48eccb908489996caad359e 5128 ros-noetic-pure-pursuit_0-2024.02.07.01.56_amd64.deb
+ aa518c5d399a293a834c03ceff8714ad0d7ca517cd6eef8f4e5f09ce2b04726b 5128 ros-noetic-pure-pursuit_0-2024.02.08.01.57_amd64.deb
 Build-Origin: Ubuntu
 Build-Architecture: amd64
-Build-Date: Wed, 07 Feb 2024 01:57:36 +0000
+Build-Date: Thu, 08 Feb 2024 01:58:26 +0000
 Build-Path: /build/package/package
 Installed-Build-Depends:
  autoconf (= 2.69-11.1),
@@ -241,7 +241,7 @@ Installed-Build-Depends:
  libxml2 (= 2.9.10+dfsg-5ubuntu0.20.04.6),
  libyaml-0-2 (= 0.2.2-1),
  libzstd1 (= 1.4.4+dfsg-3ubuntu0.1),
- linux-libc-dev (= 5.4.0-170.188),
+ linux-libc-dev (= 5.4.0-171.189),
  login (= 1:4.8.1-1ubuntu5.20.04.4),
  lsb-base (= 11.1.0ubuntu2),
  lsb-release (= 11.1.0ubuntu2),
@@ -355,4 +355,4 @@ Environment:
  DEB_BUILD_OPTIONS="nocheck parallel=4"
  LANG="C.UTF-8"
  LC_ALL="C.UTF-8"
- SOURCE_DATE_EPOCH="1707271005"
+ SOURCE_DATE_EPOCH="1707357443"
