@@ -2,16 +2,16 @@ Format: 1.0
 Source: ros-noetic-pure-pursuit
 Binary: ros-noetic-pure-pursuit
 Architecture: amd64
-Version: 0-2024.04.24.02.02
+Version: 0-2024.04.25.02.02
 Checksums-Md5:
- 1f6ba94d52a8f6e0a5e84a513c8ec5de 5116 ros-noetic-pure-pursuit_0-2024.04.24.02.02_amd64.deb
+ 35d76192a5dfaa10456033ab6ede3512 5120 ros-noetic-pure-pursuit_0-2024.04.25.02.02_amd64.deb
 Checksums-Sha1:
- da32e51118ec89f2447a304afb19001c24e1737f 5116 ros-noetic-pure-pursuit_0-2024.04.24.02.02_amd64.deb
+ ee4767bb32e84a38946792c564494215743d533f 5120 ros-noetic-pure-pursuit_0-2024.04.25.02.02_amd64.deb
 Checksums-Sha256:
- 96f2ad6b08cb39201de4332edb33c5a49002a11d136a0874ee2d08cd31156a2e 5116 ros-noetic-pure-pursuit_0-2024.04.24.02.02_amd64.deb
+ f91b7b6f26591f228a07d2d83f88a3f9c947db7e07045eda6cf63cfb2b218e15 5120 ros-noetic-pure-pursuit_0-2024.04.25.02.02_amd64.deb
 Build-Origin: Ubuntu
 Build-Architecture: amd64
-Build-Date: Wed, 24 Apr 2024 02:03:28 +0000
+Build-Date: Thu, 25 Apr 2024 02:04:28 +0000
 Build-Path: /build/package/package
 Installed-Build-Depends:
  autoconf (= 2.69-11.1),
@@ -284,10 +284,10 @@ Installed-Build-Depends:
  python3-pykdl (= 1.4.0-7ubuntu1),
  python3-pyparsing (= 2.4.6-1),
  python3-roman (= 2.0.0-3build1),
- python3-rosdep-modules (= 0.22.2-1),
+ python3-rosdep-modules (= 0.23.0-1),
  python3-rosdistro-modules (= 0.9.0-1),
- python3-rospkg (= 1.5.0-100),
- python3-rospkg-modules (= 1.5.0-1),
+ python3-rospkg (= 1.5.1-100),
+ python3-rospkg-modules (= 1.5.1-1),
  python3-setuptools (= 45.2.0-1ubuntu0.1),
  python3-sip (= 4.19.21+dfsg-1build1),
  python3-six (= 1.14.0-2),
@@ -355,4 +355,4 @@ Environment:
  DEB_BUILD_OPTIONS="nocheck parallel=4"
  LANG="C.UTF-8"
  LC_ALL="C.UTF-8"
- SOURCE_DATE_EPOCH="1713924159"
+ SOURCE_DATE_EPOCH="1714010578"
